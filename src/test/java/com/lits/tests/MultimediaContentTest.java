@@ -14,11 +14,11 @@ public class MultimediaContentTest {
     public static final String PASSWORD = "Amway123";
     public static final String MOVIE_URL = "https://www.imdb.com/title/tt0068646/";
 
-    private SignInPage signInPage = new SignInPage();
-    private MovieDetailsPage movieDetailsPage = new MovieDetailsPage();
-
     @Test
     public void testIMDB () {
+
+        SignInPage signInPage = new SignInPage();
+        MovieDetailsPage movieDetailsPage = new MovieDetailsPage();
 
         // NAVIGATE TO SIGN IN URL
         WebDriverContext.loadURL(BASE_URL);
@@ -48,6 +48,6 @@ public class MultimediaContentTest {
 
     @AfterMethod
     public void tearDown() {
-//        WebDriverContext.stop();
+        WebDriverContext.stop();
     }
 }

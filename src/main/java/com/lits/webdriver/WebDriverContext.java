@@ -30,5 +30,6 @@ public class WebDriverContext {
 
     public static void stop() {
         getDriver().quit();
+        webDriver = null;
     }
 }

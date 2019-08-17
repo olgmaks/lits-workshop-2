@@ -11,13 +11,13 @@ import org.testng.annotations.Test;
 
 public class ShoppingCartTest {
 
-    private EbayPage ebayPage = new EbayPage();
-    private SearchResultsPage searchResultsPage = new SearchResultsPage();
-    private ProductDetailsPage productDetailsPage = new ProductDetailsPage();
-    private ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
-
     @Test
     public void testAddToShoppingCart() {
+
+        EbayPage ebayPage = new EbayPage();
+        SearchResultsPage searchResultsPage = new SearchResultsPage();
+        ProductDetailsPage productDetailsPage = new ProductDetailsPage();
+        ShoppingCartPage shoppingCartPage = new ShoppingCartPage();
 
         WebDriverContext.loadURL("https://www.ebay.com/");
 
